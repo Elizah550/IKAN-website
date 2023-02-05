@@ -1,4 +1,4 @@
-<h1 align="center">:iphone: Responsive car rentals and booking websites </h1>
+<h1 align="center">:iphone: Responsive car rentals and booking website</h1>
 </br>
 <img src="asset/demo/preview.png" width="100%"></img> 
 </br>
