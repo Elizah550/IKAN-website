@@ -1,4 +1,5 @@
 <h1 align="center">:iphone: Responsive car rentals and booking website</h1>
+<h2 align="center">IKAN website</h2>
 </br>
 <img src="asset/demo/preview.png" width="100%"></img> 
 </br>
