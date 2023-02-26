@@ -22,16 +22,38 @@ header {
     display: inline-flex;
 }
 
+/*.nav-logo {
+    font-size: 2.25rem;
+    align-items: left;
+    justify-content: flex-start;
+    margin-right: 20px;
+    column-gap: .25rem;
+    font-weight: var(--font-medium);
+    transition: .3s;
+}*/
+
 .nav-logo {
-    align-items: center;
+    font-size: 2.10rem;
+    align-items: left;
+    justify-content: flex-start;
+    margin-left: -150px; /* move the element 50px to the left */
     column-gap: .25rem;
     font-weight: var(--font-medium);
     transition: .3s;
 }
 
-.nav-logo i {
-    font-size: 1.25rem;
+.login{
+    display: inline-block; /* display as an inline-block element */
+    padding: 10px 20px; /* add some padding around the button */
+    margin-right: 10px; /* add some margin to the right of the button */
+    border: 2px solid white; /* add a white border */
+    /*border: 1px solid white;*/
 }
+
+.nav-logo i {
+    font-size: 2.10rem;
+}
+
 
 .nav-logo:hover {
     color: var(--first-color);

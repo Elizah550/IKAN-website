@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+/*.cent-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 60%;
+    background-color: black;
+    background: linear-gradient(to bottom, white, black);
+    background: linear-gradient(to bottom, white, #333333, black);
+}*/
+/*.loginpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;*/
+   /* background-color: black;
+    background: linear-gradient(to bottom, white, black);
+    background: linear-gradient(to bottom, white, #333333, black);*/
+    /*background: url('home-img_1.png')no-repeat;*/
+  /*  background-color: hsl(219, 4%, 4%);
+    background-position: center;
+    background-size: cover;*/
+
+/*}
+*/
+.home section{
+
+
+}
+
+.loginpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+  background-image: linear-gradient(to bottom, black, #333333);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.image-container {
+  width: 500px; /* Set your desired width */
+  height: 300px; /* Set your desired height */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the container while preserving its aspect ratio */
+}
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    /*background: transparent;*/
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    animation: drop-in 0.5s forwards;
+
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.forget label input{
+    margin-right: 3px;
+    
+}
+.forget label a{
+    color: #fff;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+
+@keyframes drop-in {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 50%;
+    }
+}
+
+
+.nav-logo_login{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  /*padding-top: : 60px;*/
+  color: white;
+  font-size: 2.10rem;
+  /*font-weight: bold;*/
+  text-decoration: none;
+}
+
+.nav-logo_login i {
+  font-size: 2.10rem;
+  margin-left: 100%;
+  /*font-family: "Remixicon";*/
+}
+
+/*.slideshow {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 18px;
+    animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-25px);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    75% {
+        transform: translateY(-25px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}*/
+
+/*.text-slider {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 250px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.text-slider p {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  animation: slide-left-to-right 10s linear infinite;
+}
+
+@keyframes slide-left-to-right {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}*/
+
+/*.text-animation {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  animation: fadeAndGo 5s linear;
+}
+
+@keyframes fadeAndGo {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(200%);
+  }
+}
+*/
+
+.text-slideshow {
+    position: absolute;
+    margin-bottom:-30%;
+    margin-left: 10%;
+    left: 10px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    animation: fadeinout 5s infinite;
+}
+
+.text-slideshow span {
+    display: none;
+}
+
+@keyframes fadeinout {
+    0%, 33.33% {
+        opacity: 1;
+    }
+    66.67%, 100% {
+        opacity: 0;
+    }
+}
+
+.text-slideshow span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.text-slideshow span:nth-child(2) {
+    animation-delay: 2.67s;
+}
+
+.text-slideshow span:nth-child(3) {
+    animation-delay: 4.33s;
+}
+
+

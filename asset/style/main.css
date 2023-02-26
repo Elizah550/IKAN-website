@@ -9,7 +9,7 @@
 .home-container {
     position: relative;
     padding-top: 4rem;
-    row-gap: 3rem;
+    rows-gap: 3rem;
 }
 
 .home-data {

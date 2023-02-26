@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Rhenix Data</title>
+  <link rel="icon" type="image/x-icon" href="{%static 'images/rhenix.jpg' %}">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,600" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel="stylesheet" href="{%static 'css/Login.css' %}">
+
+</head>
+<body>
+	{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+        {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Important: {% endif %}
+        {{ message }}
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+<!-- partial:index.partial.html -->
+<!-- <div class="col-md-6 d-none d-md-block">
+   <img src="giphy-downsized-large.gif" class="img-fluid" style="min-height:100%;" />
+   </div> -->
+<div class="container">
+   <section id="formHolder">
+      <div class="row">
+
+         <!-- Brand Box -->
+         <div class="col-sm-6 brand">
+            <img src ="{%static 'images/rhenix.jpg' %}", width = "100px", height = "100px", style="border-radius: 10px 50px;">
+
+            <div class="heading">
+               <h2>Rhenix</h2>
+               <p>Your Right Choice</p>
+               <img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
+     class="qr-code img-thumbnail img-responsive">
+            </div>
+           
+            <div class="success-msg">
+               <p>Great! You are one of our members now</p>
+               <a href="{% url 'register' %}">Your profile</a>
+            </div>
+         </div>
+
+         
+         <!-- Form Box -->
+         <div class="col-sm-6 form">
+
+            <!-- Login Form -->
+            <div class="login form-peice">
+
+               	<div class="container">
+			<section id="content">
+				<form action="{% url 'logn' %}" method="post">
+					{% csrf_token %}
+				<div>
+					<label >Username</label>
+					<input type="text" placeholder="username" name="username" id="username">
+				</div>
+					<label >Password</label>
+					<input type="password" placeholder="password here" name="password" id="password" >
+					<input type="submit" value="sign in">
+					<a href="{% url 'password_reset' %}">Forgot Password?</a><br>
+					<br>
+					<a href="{% url 'register' %}">Create New User</a>
+				</form>
+			</section>
+		</div>
+            </div><!-- End Login Form -->
+         </div>
+      </div>
+
+   </section>
+
+
+   <footer>
+      <p>
+         All rights reserved by <a href="https://rhenix.org" target="_blank">Rhenix</a>
+      </p>
+   </footer>
+
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script  src="{%static 'js/Javascript.js' %}"></script>
+
+</body>
+</html>
