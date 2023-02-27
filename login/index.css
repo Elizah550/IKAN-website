@@ -62,7 +62,7 @@
     position: relative;
     width: 400px;
     height: 450px;
-    /*background: transparent;*/
+    background: transparent;
     border: 2px solid rgba(255,255,255,0.5);
     border-radius: 20px;
     backdrop-filter: blur(15px);
@@ -70,7 +70,6 @@
     justify-content: center;
     align-items: center;
     transform: translateX(-50%);
-    animation: drop-in 0.5s forwards;
 
 }
 h2{
@@ -169,8 +168,13 @@ button{
     }
 }
 
-
+.nav-logo_login i {
+  margin-right: 5px;
+  animation: slide-in 1s ease;
+  animation-delay: 1s;
+}
 .nav-logo_login{
+  margin-top: 25px; 
   position: fixed;
   top: 0;
   left: 0;
@@ -187,6 +191,23 @@ button{
   font-size: 2.10rem;
   margin-left: 100%;
   /*font-family: "Remixicon";*/
+}
+
+.nav-logo_login .logo-text {
+  margin-left: 10px;
+  opacity: 0;
+  animation: slide-in 0.5s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /*.slideshow {
@@ -305,4 +326,14 @@ button{
     animation-delay: 4.33s;
 }
 
-
+.signuppage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+  background-image: linear-gradient(to bottom, black, #333333);
+  background-repeat: no-repeat;
+  background-position: left top;
+}

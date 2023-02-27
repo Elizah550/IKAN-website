@@ -9,48 +9,100 @@
     <nav>
       <a href="#" class="nav-logo_login">
           <i class="ri-steering-line"></i>
-          IKAN
+          <span class="logo-text">IKAN</span>
       </a>
     </nav>
-
-    <section class = "loginpage" id = "loginpage">
-        <img src="home-img_1.png" alt="background image">
-        <div class="form-box">
+        <!--=============== lOGIN Starts===============-->
+        <section class="loginpage" id="loginpage">
+          <img src="home-img_1.png" alt="background image">
+          <div class="form-box">
             <div class="form-value">
-                <form action="">
-                    <h2>Login</h2>
-                    <div class="inputbox">
-                        <ion-icon name="mail-outline"></ion-icon>
-                        <input type="email" required>
-                        <label for="">Email</label>
-                    </div>
-                    <div class="inputbox">
-                        <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" required>
-                        <label for="">Password</label>
-                    </div>
-                    <div class="forget">
-                        <label for=""><input type="checkbox">Remember Me  <a href="#">Forgot Password</a></label>
-                      
-                    </div>
-                    <button>Log in</button>
-                    <div class="register">
-                        <p>Don't have a account ? <a href="#">Register</a></p>
-                    </div>
-                </form>
+              <form action="">
+                <h2>Login</h2>
+                <div class="inputbox">
+                  <ion-icon name="mail-outline"></ion-icon>
+                  <input type="email" required>
+                  <label for="">Email</label>
+                </div>
+                <div class="inputbox">
+                  <ion-icon name="lock-closed-outline"></ion-icon>
+                  <input type="password" required>
+                  <label for="">Password</label>
+                </div>
+                <div class="forget">
+                  <label for=""><input type="checkbox">Remember Me  <a href="#">Forgot Password</a></label>
+                </div>
+                <button>Log in</button>
+                <div class="register">
+                  <p>Don't have a account ? <a href="#" id="show-signup-form">Register</a></p>
+                </div>
+              </form>
             </div>
-        </div>
-            <div class="text-slideshow">
+          </div>
+          <div class="text-slideshow">
                 <p>Are you a admin ?</p>
                 <p>Lets go on a ride ?</p>
+          </div>
+        </section>
+        <!--=============== Login End===============-->
+
+
+
+    
+        <!--=============== SIGNUP Starts===============-->
+        <section class="signuppage" id="signuppage" style="display:none;">
+          <img src="home-img_1.png" alt="background image">
+          <div class="form-box">
+            <div class="form-value">
+              <form action="">
+                <h2>Sign Up</h2>
+                <div class="inputbox">
+                  <ion-icon name="person-outline"></ion-icon>
+                  <input type="text" required>
+                  <label for="">Name</label>
+                </div>
+                <div class="inputbox">
+                  <ion-icon name="mail-outline"></ion-icon>
+                  <input type="email" required>
+                  <label for="">Email</label>
+                </div>
+                <div class="inputbox">
+                  <ion-icon name="lock-closed-outline"></ion-icon>
+                  <input type="password" required>
+                  <label for="">Password</label>
+                </div>
+                <div class="inputbox">
+                  <ion-icon name="lock-closed-outline"></ion-icon>
+                  <input type="password" required>
+                  <label for="">Confirm Password</label>
+                </div>
+                <div class="inputbox">
+                  <ion-icon name="call-outline"></ion-icon>
+                  <input type="tel" required>
+                  <label for="">Phone</label>
+                </div>
+                <button>Sign Up</button>
+                <div class="register">
+                  <p>Already have an account? <a href="#" id="show-login-form">Log in</a></p>
+                </div>
+              </form>
             </div>
-    </section>
+          </div>
+        </section>
+        <!--=============== SIGNUP End===============-->
+
+
+   <!--    <div class="text-slideshow">
+                <p>Are you a admin ?</p>
+                <p>Lets go on a ride ?</p>
+      </div> -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
+        // ARE YOU ADMIN ANIM
         let slideIndex = 0;
         showSlides();
-
         function showSlides() {
           let slides = document.getElementsByClassName("text-slideshow")[0].getElementsByTagName("p");
           for (let i = 0; i < slides.length; i++) {
@@ -64,6 +116,7 @@
           setTimeout(showSlides, 10000); // Change slide every 2 seconds
         }
     </script>
+
     <!-- <script>
         var slideIndex = 0;
         showSlides();
@@ -82,5 +135,6 @@
             setTimeout(showSlides, 8000); // Change image every 8 seconds
         }
     </script> -->
-</body>
+
+    </body>
 </html>
