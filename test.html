@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IKAN Car Rental</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="dashboard">
+      <h1>IKAN Car Rental</h1>
+    <style>
+      /* Style for the left panel */
+      #dashboard {
+  background-color: #1C1C1C;
+  color: #FFF;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#dashboard h1 {
+  font-size: 24px;
+  margin: 20px;
+}
+
+#dashboard ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#dashboard li {
+  margin: 10px;
+  padding: 10px;
+}
+
+#dashboard li:hover {
+  background-color: #444;
+}
+
+#dashboard a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+#dashboard a:hover {
+  text-decoration: underline;
+}
+
+#dashboard .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+#dashboard .logo img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+#dashboard .booking {
+  background-color: #1C1C1C;
+  color: #FFF;
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#dashboard .booking label {
+  font-size: 18px;
+  margin: 10px;
+}
+
+#dashboard .booking input[type="text"], #dashboard .booking input[type="email"], #dashboard .booking input[type="date"], #dashboard .booking select {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  background-color: #333;
+  color: #FFF;
+  border-radius: 5px;
+}
+
+#dashboard .booking button {
+  background-color: #2ECC71;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#dashboard .booking button:hover {
+  background-color: #27AE60;
+}
+
+#dashboard .add-car {
+  background-color: #1C1C1C;
+  color: #FFF;
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#dashboard .add-car label {
+  font-size: 18px;
+  margin: 10px;
+}
+
+#dashboard .add-car input[type="text"], #dashboard .add-car input[type="number"], #dashboard .add-car textarea, #dashboard .add-car select {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  background-color: #333;
+  color: #FFF;
+  border-radius: 5px;
+}
+
+#dashboard .add-car button {
+  background-color: #2ECC71;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#dashboard .add-car button:hover {
+  background-color: #27AE60;
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- Left panel -->
+    <div class="sidebar">
+  <div class="sidebar-item">
+    <h3>Booking a car</h3>
+  </div>
+  <div class="sidebar-item">
+    <h3>Add a car</h3>
+  </div>
+  <div class="sidebar-item">
+    <h3>Brands</h3>
+    <ul class="brand-list">
+      <li><img src="./asset/images/brand1.png" alt="Brand 1">Brand 1</li>
+      <li><img src="./asset/images/brand2.png" alt="Brand 2">Brand 2</li>
+      <li><img src="./asset/images/brand3.png" alt="Brand 3">Brand 3</li>
+    </ul>
+  </div>
+</div>
+    <!-- Car list -->
+    <div class="car-list">
+      <div class="car-card tesla">
+        <img src="./asset/images/featured1.png" alt="">
+        <h3>Tesla Model X</h3>
+        <p>Luxury electric SUV</p>
+        <p>Price: $98,900</p>
+      </div>
+      <div class="car-card tesla">
+        <img src="./asset/images/featured2.png" alt="">
+        <h3>Tesla Model 3</h3>
+        <p>Mid-size electric sedan</p>
+        <p>Price: $45,900</p>
+      </div>
+      <div class="car-card audi">
+        <img src="./asset/images/featured3.png" alt="">
+        <h3>Audi E-tron</h3>
+        <p>Luxury electric SUV</p>
+        <p>Price: $175,900</p>
+      </div>
+      <div class="car-card porsche">
+        <img src="./asset/images/featured4.png" alt="">
+        <h3>Porsche Boxster 987</h3>
+        <p>Luxury sports car</p>
+        <p>Price: $126,900</p>
+      </div>
+      <div class="car-card porsche">
+        <img src="./asset/images/featured5.png" alt="">
+        <h3>Porsche Panamera</h3>
+        <p>Luxury sports car</p>
+        <p>Price: $126,900</p>
+      </div>
